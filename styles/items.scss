@@ -1,10 +1,30 @@
 .items-section{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: column;
-
+    background-color:blue;
+    align-items: center;
     img {
-        width: 90vw;
-        height: 90vw;
-        
+        margin: 20px;  
+    }
+} 
+@media screen and (min-width: 600px) {
+    .items-section {
+        flex-direction: row;
+    }
+    img {
+        width: 300px;
+        /*width: 80vw;*/ 
     }
 }
+@media screen and (max-width: 600px) {
+.items-section{
+    img {
+        width: 80vw;
+          
+        }
+            }
+}
+
+
